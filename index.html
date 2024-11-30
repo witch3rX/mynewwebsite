@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- my website -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>My First Website</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/ie7.css" type="text/css" />
+		<![endif]-->
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				<a href="index.html" id="logo"><img src="images/logo.gif" alt=""/></a>
+				<ul>
+					<li class="selected"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="services.html">Services</a></li>
+				</ul>
+			</div>
+			<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const welcomeMessage = document.createElement("div");
+        welcomeMessage.textContent = "Welcome to Abir Mahmud's Website!";
+        welcomeMessage.style.cssText = "background-color: lightblue; padding: 10px; font-size: 20px; text-align: center;";
+        document.body.insertBefore(welcomeMessage, document.body.firstChild);
+    });
+</script>
+			<script>
+    function personalizedGreeting() {
+        const userName = prompt("What's your name?");
+        if (userName) {
+            document.getElementById("greeting").textContent = `Hello, ${userName}! Welcome to My Website!`;
+        }
+    }
+</script>
+<div id="greeting" style="font-size: 18px; text-align: center; margin-top: 10px;"></div>
+<button style="display: block; margin: 20px auto; padding: 10px; font-size: 16px;" onclick="personalizedGreeting()">Click me for a personalized greeting!</button>
+
+			<div class="body">
+				<div id="featured">
+					<h3>WELCOME TO MY WEBSITE</h3>
+					<p>This is my first website. Thanks for visiting my website.</p>
+					<input type="button" value="Read more" onClick="parent.location='blog.html'"/>
+				</div>
+				<ul class="blog">
+					<li>
+						<div>
+							<a href="blog.html"><img src="images/pastries.jpg" alt=""/></a>
+							<p>Pastries</p>
+							<a href="blog.html">Click to read more</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="blog.html"><img src="images/fruits.jpg" alt=""/></a>
+							<p>Fruits</p>
+							<a href="blog.html">Click to read more</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="blog.html"><img src="images/cosmetics.jpg" alt=""/></a>
+							<p>Cosmetics</p>
+							<a href="blog.html">Click to read more</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="services.html">Gallery</a></li>
+				</ul>
+				<p>&#169; ID: 2222323232, NAME: ABIR MAHMUD </p>
+				<div class="connect">
+					<a href="http://facebook.com/profile.php?id=100009582231756" id="facebook">facebook</a>
+					<a href="http://twitter.com/" id="twitter">twitter</a>
+					<a href="http://www.youtube.com/" id="vimeo">vimeo</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>  
